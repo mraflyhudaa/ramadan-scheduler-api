@@ -1,0 +1,10 @@
+name = "ramadan-scheduler-api"
+main = "dist/worker.js"
+compatibility_date = "2025-03-11"
+
+[build]
+command = "pnpm build"
+
+[[routes]]
+pattern = "*"
+script = "ramadan-scheduler-api"

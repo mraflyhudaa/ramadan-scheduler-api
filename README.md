@@ -51,6 +51,11 @@ Run the development server with hot reloading:
 npm run dev
 ```
 
+For Cloudflare Workers development environment:
+```
+npm run worker:dev
+```
+
 ### Production
 
 Build and start the production server:
@@ -59,11 +64,33 @@ npm run build
 npm start
 ```
 
+### Deployment to Cloudflare Workers
+
+1. Login to Cloudflare (if not already logged in):
+```
+npx wrangler login
+```
+
+2. Deploy to Cloudflare Workers:
+```
+npm run deploy
+```
+
 ### Testing
 
 Run the test suite:
 ```
 npm test
+```
+
+Run tests with coverage report:
+```
+npm run test:coverage
+```
+
+Run tests in watch mode (for development):
+```
+npm run test:watch
 ```
 
 ## API Endpoints
